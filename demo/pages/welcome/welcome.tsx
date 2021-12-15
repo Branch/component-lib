@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card } from '@company/scope.ui.card';
-import { Heading } from '@company/scope.ui.heading';
-import { Text } from '@company/scope.ui.text';
+import { Card } from '@branch/neumorphism.ui.card';
+import { Heading } from '@branch/neumorphism.ui.heading';
+import { Text } from '@branch/neumorphism.ui.text';
 import styles from './welcome.module.scss';
 
 export function Welcome() {

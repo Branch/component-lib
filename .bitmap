@@ -10,38 +10,38 @@
 
 {
     "envs/my-react": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "demo/envs/my-react"
     },
     "pages/welcome": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "demo/pages/welcome"
     },
     "ui/button": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "scope/ui/button"
     },
     "ui/card": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "demo/ui/card"
     },
     "ui/heading": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "demo/ui/heading"
     },
     "ui/text": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "demo/ui/text"
     },
