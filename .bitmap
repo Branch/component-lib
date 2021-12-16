@@ -31,19 +31,19 @@
         "scope": "branch.neumorphism",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/ui/card"
+        "rootDir": "scope/ui/card"
     },
     "ui/heading": {
         "scope": "branch.neumorphism",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/ui/heading"
+        "rootDir": "scope/ui/heading"
     },
     "ui/text": {
         "scope": "branch.neumorphism",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "demo/ui/text"
+        "rootDir": "scope/ui/text"
     },
     "$schema-version": "14.9.0"
 }
