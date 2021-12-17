@@ -11,14 +11,14 @@ it('should render correct Heading', () => {
 it('should render correct text', () => {
   const { getByText } = render(<WelcomePage />);
   const rendered = getByText(
-    'Edit this component and see it change in the UI or play with the commands below to learn more about how Bit works.'
+      'Edit this component and see it change in the UI or play with the commands below to learn more about how Bit works.'
   );
   expect(rendered).toBeTruthy();
 });
 
 it('should render some cards', () => {
   const { getByText } = render(<WelcomePage />);
-  const rendered = getByText('Docs');
+  const rendered = getByText('Big flat card');
   expect(rendered).toBeTruthy();
 });
 
@@ -36,6 +36,6 @@ it('should render another text', () => {
 
 it('should render some more cards', () => {
   const { getByText } = render(<WelcomePage />);
-  const rendered = getByText('Templates');
+  const rendered = getByText('MD convex card');
   expect(rendered).toBeTruthy();
 });
