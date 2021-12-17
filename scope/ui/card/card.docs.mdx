@@ -1,5 +1,5 @@
 ---
-description: 'Renders a Heading, Text, CopyBox and is linkable'
+description: 'Renders a Heading, Text and is linkable'
 labels: ['card']
 ---
 
@@ -9,19 +9,31 @@ import { Card } from './card';
 
 - renders a Heading Component
 - renders a Text Component
-- renders a CopyBox Component which can be used to copy the text to the clipboard. This component is optional
 - renders an External Link
 
 ### Component usage
 
-Render component with any text, html or other component inside
+Render component with any heading, text and link. Available types are:
+ - flat
+ - convex
+ - concave
+ - pressed
+
+Optional border radius sizes:
+ - sm
+ - md
+ - lg
+
+Padding in pixels
 
 ```js
 <Card
   link="https://harmony-docs.bit.dev/aspects/generator"
-  heading="Templates"
-  text="to see a list of available templates"
-  command="bit templates"
+  heading="My projects"
+  text="to see a list of my projects"
+  type="flat"
+  size="sm"
+  padding={[10,10,10,10]}
 />
 ```
 
@@ -34,6 +46,8 @@ Modify the text to see it change live.
   link="https://harmony-docs.bit.dev/aspects/generator"
   heading="Templates"
   text="to see a list of available templates"
-  command="bit templates"
+  type="flat"
+  size="sm"
+  padding={[10,10,10,10]}
 />
 ```

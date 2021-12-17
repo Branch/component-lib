@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading } from '@branch/neumorphism.ui.heading';
 import { Text } from '@branch/neumorphism.ui.text';
 import { ExternalLink } from '@teambit/design.ui.external-link';
-import { CopyBox } from '@teambit/documenter.ui.copy-box';
+import classNames from 'classnames/bind';
 
 import styles from './card.module.scss';
 
@@ -20,27 +20,48 @@ export type CardProps = {
    */
   text?: string;
   /**
-   * command for the copy box component
+   * type of card
    */
-  command?: string;
+  type?: string;
+  /**
+   * Padding
+   */
+  padding?: number[];
+  /**
+   * Border radius size
+   */
+  size?: string
 };
 
 export function Card(
   {
-    heading, command, text, link,
+    heading, text, link, type, size, padding
   }: CardProps,
 ) {
+  const cx = classNames.bind(styles);
+  const className = cx({
+    card: true,
+    flat: type === 'flat',
+    convex: type === 'convex',
+    concave: type === 'concave',
+    pressed: type === 'pressed',
+    sm: size === 'sm',
+    md: size === 'md',
+    lg: size === 'lg'
+  });
+
+  const inlineStyles = {
+    padding: padding.join("px ") + "px"
+  }
+
   return (
-    <div className={styles.card}>
+    <div className={className} style={inlineStyles}>
       <ExternalLink href={link}>
         <Heading element="h3" className={styles.heading}>
           {heading}
         </Heading>
         <Text className={styles.text} text={text} />
       </ExternalLink>
-      {command ? (
-        <CopyBox className={styles['copy-box']}>{command}</CopyBox>
-      ) : null}
     </div>
   );
 }
