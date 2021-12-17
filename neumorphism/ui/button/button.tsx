@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import styles from "./button.module.scss";
+import { neuStyles } from '@branch/neumorphism.styles.neustyles';
+import buttonStyles from './button.module.scss';
 
 
 export type ButtonProps = {
@@ -24,9 +25,10 @@ export type ButtonProps = {
 
 export function Button({ text, type, padding, size }: ButtonProps) {
 
-  const cx = classNames.bind(styles);
+  const cx = classNames.bind(neuStyles);
   const className = cx({
-    button: true,
+    neuelement: true,
+    hoverable: true,
     flat: type === 'flat',
     convex: type === 'convex',
     concave: type === 'concave',
@@ -40,7 +42,7 @@ export function Button({ text, type, padding, size }: ButtonProps) {
     padding: padding.join("px ") + "px"
   }
   return (
-    <div className={className} style={inlineStyles}>
+    <div className={cx(buttonStyles.button, className)} style={inlineStyles}>
       {text}
     </div>
   );

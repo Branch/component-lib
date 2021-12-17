@@ -21,9 +21,15 @@
         "mainFile": "index.ts",
         "rootDir": "demo/pages/welcome"
     },
+    "styles/neustyles": {
+        "scope": "",
+        "version": "",
+        "mainFile": "index.ts",
+        "rootDir": "neumorphism/styles/neustyles"
+    },
     "ui/button": {
         "scope": "branch.neumorphism",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/button"
     },

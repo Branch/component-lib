@@ -4,7 +4,8 @@ import { Text } from '@branch/neumorphism.ui.text';
 import { ExternalLink } from '@teambit/design.ui.external-link';
 import classNames from 'classnames/bind';
 
-import styles from './card.module.scss';
+import { neuStyles } from '@branch/neumorphism.styles.neustyles';
+import cardStyles from './card.module.scss';
 
 export type CardProps = {
   /**
@@ -38,9 +39,9 @@ export function Card(
     heading, text, link, type, size, padding
   }: CardProps,
 ) {
-  const cx = classNames.bind(styles);
+  const cx = classNames.bind(neuStyles);
   const className = cx({
-    card: true,
+    neuelement: true,
     flat: type === 'flat',
     convex: type === 'convex',
     concave: type === 'concave',
@@ -55,12 +56,12 @@ export function Card(
   }
 
   return (
-    <div className={className} style={inlineStyles}>
+    <div className={cx(cardStyles.card, className)} style={inlineStyles}>
       <ExternalLink href={link}>
-        <Heading element="h3" className={styles.heading}>
+        <Heading element="h3">
           {heading}
         </Heading>
-        <Text className={styles.text} text={text} />
+        <Text text={text} />
       </ExternalLink>
     </div>
   );
