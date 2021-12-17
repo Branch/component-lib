@@ -25,25 +25,25 @@
         "scope": "branch.neumorphism",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "scope/ui/button"
+        "rootDir": "neumorphism/ui/button"
     },
     "ui/card": {
         "scope": "branch.neumorphism",
         "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "scope/ui/card"
+        "rootDir": "neumorphism/ui/card"
     },
     "ui/heading": {
         "scope": "branch.neumorphism",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "scope/ui/heading"
+        "rootDir": "neumorphism/ui/heading"
     },
     "ui/text": {
         "scope": "branch.neumorphism",
         "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "scope/ui/text"
+        "rootDir": "neumorphism/ui/text"
     },
     "$schema-version": "14.9.0"
 }
