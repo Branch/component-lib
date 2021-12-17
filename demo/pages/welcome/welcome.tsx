@@ -15,34 +15,34 @@ export function Welcome() {
       <div className={styles.grid}>
         <Card
             link="https://harmony-docs.bit.dev/reference/bit-oss-server"
-            heading="Self Host"
+            heading="Big flat card"
             text="lean how to self host these components"
             type="flat"
-            size=""
-            padding={[10,10,10,10]}
+            size="lg"
+            padding={[50,30,50,30]}
           />
 
         <Card
             link="https://harmony-docs.bit.dev/reference/bit-oss-server"
-            heading="Self Host"
+            heading="MD convex card"
             text="lean how to self host these components"
-            type="flat"
-            size=""
+            type="convex"
+            size="md"
             padding={[10,10,10,10]}
           />
         <Card
             link="https://harmony-docs.bit.dev/reference/bit-oss-server"
-            heading="Self Host"
+            heading="SM concave card"
             text="lean how to self host these components"
-            type="flat"
-            size=""
+            type="concave"
+            size="sm"
             padding={[10,10,10,10]}
           />
         <Card
             link="https://harmony-docs.bit.dev/reference/bit-oss-server"
-            heading="Self Host"
+            heading="tiny pressed card"
             text="lean how to self host these components"
-            type="flat"
+            type="pressed"
             size=""
             padding={[10,10,10,10]}
           />
@@ -52,17 +52,6 @@ export function Welcome() {
         Bit CLI
       </Heading>
       <Text className={styles.texts} text="Understanding Bit's Commands" />
-
-      <div className={styles.grid}>
-          <Card
-              link="https://harmony-docs.bit.dev/reference/bit-oss-server"
-              heading="Self Host"
-              text="lean how to self host these components"
-              type="flat"
-              size=""
-              padding={[10,10,10,10]}
-          />
-      </div>
     </div>
   );
 }

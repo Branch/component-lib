@@ -18,7 +18,7 @@ it('should render correct text', () => {
 
 it('should render some cards', () => {
   const { getByText } = render(<WelcomePage />);
-  const rendered = getByText('Docs');
+  const rendered = getByText('Big flat card');
   expect(rendered).toBeTruthy();
 });
 
@@ -36,6 +36,6 @@ it('should render another text', () => {
 
 it('should render some more cards', () => {
   const { getByText } = render(<WelcomePage />);
-  const rendered = getByText('Templates');
+  const rendered = getByText('MD convex card');
   expect(rendered).toBeTruthy();
 });
