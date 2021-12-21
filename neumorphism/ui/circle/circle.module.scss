@@ -1,0 +1,13 @@
+.circle {
+  padding: 0.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+
+  img {
+    width: 100%;
+    border-radius: 100%;
+  }
+}
