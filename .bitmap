@@ -40,8 +40,8 @@
         "rootDir": "neumorphism/ui/card"
     },
     "ui/circle": {
-        "scope": "",
-        "version": "",
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/circle"
     },
