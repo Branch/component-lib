@@ -63,9 +63,9 @@ export function Slider({speed, images, type, size, padding }: SliderProps) {
   return (
     <div className={cx(className, slideStyles.slider)} style={sliderInlineStyles}>
       <div className={slideTrackType} style={trackInlineStyles}>
-        {images.map(image => {
+        {images.map((image,i) => {
           return (
-              <div className={slideStyles.slide}>
+              <div key={i} className={slideStyles.slide}>
                 <img src={image} alt="logo" />
               </div>
           )
