@@ -9,5 +9,7 @@ export const BasicCard = () => (
     type="flat"
     size=""
     padding={[10,10,10,10]}
+    image={"https://gpresults.info/static/media/fabio-tinted.c64f6f24.png"}
+    tags={['React', 'Express']}
   />
 );

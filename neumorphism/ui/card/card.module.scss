@@ -1,4 +1,16 @@
 .card {
-  border-radius: 50px;
-  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.bg {
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  background-position: center;
+  border-radius: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
 }
