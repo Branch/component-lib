@@ -68,16 +68,14 @@ export function Card(
   return (
     <div className={cx(cardStyles.card, className)} style={inlineStyles}>
       <ExternalLink href={link}>
-        {image.length > 0 &&
-          <div className={cardStyles.bg} style={{backgroundImage: `url(${image})`}}>
-
-          </div>
+        {image !== undefined &&
+          <div className={cardStyles.bg} style={{backgroundImage: `url(${image})`}}></div>
         }
         <Heading element="h3">
           {heading}
         </Heading>
         <Text text={text} />
-        {tags.length > 0 &&
+        {tags !== undefined &&
           <div className={cardStyles.tags}>
             {tags.map((tag,i) => {
               return <div key={i}>{tag}</div>
