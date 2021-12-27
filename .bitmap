@@ -51,6 +51,12 @@
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/heading"
     },
+    "ui/link": {
+        "scope": "branch.neumorphism",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "neumorphism/ui/link"
+    },
     "ui/slider": {
         "scope": "branch.neumorphism",
         "version": "0.0.1",
