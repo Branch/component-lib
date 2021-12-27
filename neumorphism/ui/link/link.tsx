@@ -54,7 +54,7 @@ export function Link({ text, type, size, padding, url, newWindow }: LinkProps) {
   });
 
   return (
-    <a className={classNames(linkStyles, className)} href={url} style={inlineStyles} target={newWindow === true ? '_blank' : '_self'}>
+    <a className={classNames(linkStyles.link, className)} href={url} style={inlineStyles} target={newWindow === true ? '_blank' : '_self'}>
       {text}
     </a>
   );
