@@ -25,13 +25,19 @@ export type CircleProps = {
    * Image element to embed in circle
    */
   img?: string
+
+  /**
+   * Hoverable
+   */
+  hoverable?: boolean
 };
 
-export function Circle({ size, type, width, img }: CircleProps) {
+export function Circle({ size, type, width, img, hoverable }: CircleProps) {
 
   const cx = classNames.bind(neuStyles);
   const className = cx({
     neuelement: true,
+    hoverable: hoverable === true,
     flat: type === 'flat',
     convex: type === 'convex',
     concave: type === 'concave',
