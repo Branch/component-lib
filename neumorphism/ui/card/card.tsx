@@ -42,11 +42,16 @@ export type CardProps = {
    * Card image
    */
   image?: string;
+
+  /**
+   * Children components
+   */
+  children: any
 };
 
 export function Card(
   {
-    heading, text, link, type, size, padding, image, tags
+    heading, text, link, type, size, padding, image, tags, children
   }: CardProps,
 ) {
   const cx = classNames.bind(neuStyles);
@@ -75,6 +80,7 @@ export function Card(
           {heading}
         </Heading>
         <Text text={text} />
+        {children}
         {tags !== undefined &&
           <div className={cardStyles.tags}>
             {tags.map((tag,i) => {
