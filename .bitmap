@@ -17,31 +17,31 @@
     },
     "pages/welcome": {
         "scope": "branch.neumorphism",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "demo/pages/welcome"
     },
     "styles/neustyles": {
         "scope": "branch.neumorphism",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/styles/neustyles"
     },
     "ui/button": {
         "scope": "branch.neumorphism",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/button"
     },
     "ui/card": {
         "scope": "branch.neumorphism",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/card"
     },
     "ui/circle": {
         "scope": "branch.neumorphism",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/circle"
     },
@@ -53,13 +53,13 @@
     },
     "ui/link": {
         "scope": "branch.neumorphism",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/link"
     },
     "ui/slider": {
         "scope": "branch.neumorphism",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/slider"
     },
