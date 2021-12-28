@@ -14,7 +14,6 @@ export function Welcome() {
       />
       <div className={styles.grid}>
         <Card
-            link="https://harmony-docs.bit.dev/reference/bit-oss-server"
             heading="Big flat card"
             text="lean how to self host these components"
             type="flat"
@@ -23,7 +22,6 @@ export function Welcome() {
           />
 
         <Card
-            link="https://harmony-docs.bit.dev/reference/bit-oss-server"
             heading="MD convex card"
             text="lean how to self host these components"
             type="convex"
@@ -31,7 +29,6 @@ export function Welcome() {
             padding={[10,10,10,10]}
           />
         <Card
-            link="https://harmony-docs.bit.dev/reference/bit-oss-server"
             heading="SM concave card"
             text="lean how to self host these components"
             type="concave"
@@ -39,7 +36,6 @@ export function Welcome() {
             padding={[10,10,10,10]}
           />
         <Card
-            link="https://harmony-docs.bit.dev/reference/bit-oss-server"
             heading="tiny pressed card"
             text="lean how to self host these components"
             type="pressed"
