@@ -1,17 +1,12 @@
 import React from 'react';
 import { Heading } from '@branch/neumorphism.ui.heading';
 import { Text } from '@branch/neumorphism.ui.text';
-import { ExternalLink } from '@teambit/design.ui.external-link';
 import classNames from 'classnames/bind';
 
 import { neuStyles } from '@branch/neumorphism.styles.neustyles';
 import cardStyles from './card.module.scss';
 
 export type CardProps = {
-  /**
-   * link for the card
-   */
-  link?: string;
   /**
    * heading for the card
    */
@@ -51,7 +46,7 @@ export type CardProps = {
 
 export function Card(
   {
-    heading, text, link, type, size, padding, image, tags, children
+    heading, text, type, size, padding, image, tags, children
   }: CardProps,
 ) {
   const cx = classNames.bind(neuStyles);
@@ -72,7 +67,6 @@ export function Card(
 
   return (
     <div className={cx(cardStyles.card, className)} style={inlineStyles}>
-      <ExternalLink href={link}>
         {image !== undefined &&
           <div className={cardStyles.bg} style={{backgroundImage: `url(${image})`}}></div>
         }
@@ -88,7 +82,6 @@ export function Card(
             })}
           </div>
         }
-      </ExternalLink>
     </div>
   );
 }
