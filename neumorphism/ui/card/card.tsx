@@ -46,7 +46,7 @@ export type CardProps = {
   /**
    * Children components
    */
-  children: any
+  children?: any
 };
 
 export function Card(
