@@ -17,7 +17,7 @@
     },
     "pages/welcome": {
         "scope": "branch.neumorphism",
-        "version": "0.0.8",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "demo/pages/welcome"
     },
@@ -35,7 +35,7 @@
     },
     "ui/card": {
         "scope": "branch.neumorphism",
-        "version": "0.0.8",
+        "version": "0.0.9",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/card"
     },
