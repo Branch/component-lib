@@ -1,5 +1,5 @@
 ---
-description: 'Renders a Heading, Text and is linkable'
+description: 'Renders a card component'
 labels: ['card']
 ---
 
@@ -7,24 +7,9 @@ import { Card } from './card';
 
 ## Card component
 
-- renders a Heading Component
-- renders a Text Component
-- renders an External Link
-
 ### Component usage
 
-Render component with any heading, text and link. Available types are:
- - flat
- - convex
- - concave
- - pressed
-
-Optional border radius sizes:
- - sm
- - md
- - lg
-
-Padding in pixels
+Render component with any heading, text, image, padding and tags.
 
 ```js
 <Card
@@ -40,7 +25,7 @@ Padding in pixels
 
 ### Live Playground
 
-Modify the text to see it change live.
+Modify the props and see the component change live
 
 ```js live
 <Card
