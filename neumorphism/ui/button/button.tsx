@@ -21,9 +21,13 @@ export type ButtonProps = {
    * Border radius size
    */
   size?: string
+  /**
+   * Callback event
+   */
+  clickHandler?: () => void
 };
 
-export function Button({ text, type, padding, size }: ButtonProps) {
+export function Button({ text, type, padding, size, clickHandler }: ButtonProps) {
 
   const cx = classNames.bind(neuStyles);
   const className = cx({
@@ -42,7 +46,7 @@ export function Button({ text, type, padding, size }: ButtonProps) {
     padding: padding.join("px ") + "px"
   }
   return (
-    <div className={cx(buttonStyles.button, className)} style={inlineStyles}>
+    <div className={cx(buttonStyles.button, className)} style={inlineStyles} onClick={clickHandler}>
       {text}
     </div>
   );

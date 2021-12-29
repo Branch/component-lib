@@ -29,7 +29,7 @@
     },
     "ui/button": {
         "scope": "branch.neumorphism",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "neumorphism/ui/button"
     },
