@@ -1,5 +1,7 @@
 # Welcome to your Bit Workspace
 
+Library site: https://bit.dev/branch/neumorphism
+
 To get started straight away run `bit start` and open [localhost:3000](http://localhost:3000). It may take a while to build the first time you run this command as it is building the whole User Interface for your development environment.
 
 ```bash
@@ -31,7 +33,3 @@ This removes the components from the bitmap as well as removes the files.
 - **.gitignore**
 
 Ignoring any files from version control
-
-
-
-This very component repo can be found at https://bit.dev/branch/neumorphism
